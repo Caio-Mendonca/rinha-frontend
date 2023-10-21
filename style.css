@@ -8,9 +8,23 @@ body{
     background-color: #FFFFFF;
     overflow-y: scroll;
     text-align: center;
+    color: #000;
+    font-family: Inter;
+
   }
-  #intro h1, p{
+  #intro h1{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     color: #000000;
+  }
+  #intro p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
   #alert {
     display: none;
@@ -33,7 +47,7 @@ body{
     background-color: #FFFFFF;
   }
   #uniq {
-    margin-left: -5px;
+    margin-left: 5%;
     background-color: #FFFFFF;
   }
   .blue-color {
@@ -61,6 +75,7 @@ body{
     margin-inline-end: 0px;
     font-weight: bold;
     color: #4E9590;
+    padding-left: 5%;
   }
   h3 span {
     color: #F2CAB8;
@@ -75,9 +90,9 @@ body{
     margin-left: 5%;
   }
   .json-container .json-object-children-elementens-children { 
-    color: #BFBFBF;
-    padding: 2px; 
+    color: #BFBFBF; 
     border-left: 2px solid #BFBFBF;
+    padding-left: 5%;
     margin-left: 5%;
   }
   .json-container p {

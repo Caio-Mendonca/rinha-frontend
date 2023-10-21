@@ -81,12 +81,14 @@ function setupJsonData(element) {
             jsonContainer.appendChild(objectDiv2);
           }
         } else {
-          const objectString = JSON.stringify(data, null, 2);
+          if(document.getElementsByClassName(`json-object-${data}`).length ===0 ){
+            const objectString = JSON.stringify(data, null, 2);
+            const objectDiv = document.createElement('div');
+            objectDiv.className = `json-object-${data}`;
+            objectDiv.innerHTML = `<h2 id='uniq'>${i}: <span>${objectString}</span></h2>`;
+            jsonContainer.appendChild(objectDiv); 
+          }
 
-          const objectDiv = document.createElement('div');
-          objectDiv.className = 'json-object';
-          objectDiv.innerHTML = `<h2 id='uniq'>${i}: <span>${objectString}</span></h2>`;
-          jsonContainer.appendChild(objectDiv);
         }
       }
       jsonContainer.classList.add('json-container');

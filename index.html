@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Viewer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <div id='intro'>
+        <h1>JSON Tree Viewer</h1>
+        <p>Simple JSON Viewer that runs completely on-client. No data exchange </p>
+      </div>
+      <div class="card" id='card'>
+        <input type="file" id="jsonFileInput">
+      </div>
+      <div id='alert'>
+        <p>Invalid file. Please load a valid JSON file.</p>
+      </div>
+    </div>
+    <div id="jsonViewer"></div>
+  </body>
+  <script src="json-viewer.js"></script>
+  <script>
+    setupJsonData(document.querySelector('#jsonFileInput'));
+  </script>
+</html>
